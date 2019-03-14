@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.pc{
+    color:burlywood
+}
+
+a {
+    text-decoration: none;
+}
+
+.container{
+    max-width: inherit;
+    margin: auto;
+}
+nav{
+    background:rgb(104, 101, 101);
+    color:white;
+    overflow:auto;
+}
+
+nav ul{
+    float: right;
+    list-style-type: none;
+}
+
+nav a{
+    color: white;
+}
+
+nav ul li a{
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+    animation-name: links;
+    animation-duration: 2s;
+
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.current{
+    background:gray;
+    color:burlywood;
+}
+
+nav ul li a:hover{
+    background:gray;
+    transform: rotateY(360deg);
+}
+.container .menu .logo{
+    float: left;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+@keyframes links{
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.middle {
+    background-image:url("/img/showcase.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:auto;
+    height:600px;
+    font-family: 'Cinzel', serif;
+
+}
+
+.imgtxt{
+    padding-top: 170px;
+    text-align: center;
+    color:white;
+    line-height: 1.2em;
+    position: relative;
+    animation-name: txt;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes txt{
+    0% {left: -2000px}
+    100% {left: 2vw }
+}
+
+.imgtxt h1{
+    font-size: 60px;
+    line-height: 1.2em;
+}
