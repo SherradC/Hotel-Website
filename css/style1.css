@@ -117,7 +117,7 @@ nav ul li a:hover{
     padding:10px 10px;
     position: relative;
     opacity:0;
-    animation: btn 5s ease-in 3s forwards;
+    animation: btn 4s ease-in 3s forwards;
     border-radius: 50%;
 }
 
@@ -150,20 +150,7 @@ nav ul li a:hover{
     overflow: hidden;
     background: gray;
     font-family: 'Cinzel', serif;
-    /*animation: blur 5s ease-in-out;*/
 }
-    
-
-/*
-@keyframes blur{
-    0%,100% {
-    text-shadow: -5px 5px 0 rgba(0,0,0,.2)}
-
-    50% {
-    text-shadow: -50px 50px 0 rgba(0,0,0,.2);
-    filter: blur(15px);
-}
-*/
 .twbl .fbl p{
     padding-bottom: 30px;
     padding-top: 30px;
@@ -195,8 +182,53 @@ nav ul li a:hover{
     text-align: center;
     border-radius: 50%;
     cursor: pointer;
+    opacity: 0;
+    animation: btn 4s ease-in 3s forwards;
 }
+
 
 .btn2:hover{
     background-color: white;
+}
+
+.clear{
+    clear: both;
+}
+
+i {
+    color:red;
+}
+
+.bottom{
+    display: flex;
+    height:100%;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    color:black;
+    
+
+}
+
+.loca{
+    margin: auto;
+    padding: 50px 15px;
+
+
+    
+}
+
+.meal{
+    background-color: burlywood;
+    margin: auto;
+    padding: 50px 15px;
+
+}
+
+.fitness{
+    margin: auto;
+    padding: 50px 15px;
+}
+
+.bottom p{
+    margin-top: 25px;
 }
