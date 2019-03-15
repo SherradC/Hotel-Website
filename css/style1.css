@@ -38,10 +38,10 @@ nav ul li a{
     font-family: 'Kaushan Script', cursive;
     font-size: 20px;
     animation-name: links;
-    animation-duration: 2s;
+    animation-duration: 3s;animation-timing-function: ease-in;
 
-    transition-duration: 2s;
-    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
 }
 
 .current{
@@ -74,6 +74,8 @@ nav ul li a:hover{
     margin:auto;
     height:600px;
     font-family: 'Cinzel', serif;
+    display: flex;
+    flex-flow: row wrap;
 
 }
 
@@ -83,9 +85,11 @@ nav ul li a:hover{
     color:white;
     line-height: 1.2em;
     position: relative;
+    margin: auto;
     animation-name: txt;
     animation-duration: 5s;
     animation-fill-mode: forwards;
+    
 }
 
 @keyframes txt{
@@ -96,4 +100,103 @@ nav ul li a:hover{
 .imgtxt h1{
     font-size: 60px;
     line-height: 1.2em;
+}
+
+.imgtxt p{
+    font-size: 25px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    color: black;
+    background:burlywood;
+    border:none;
+    cursor: pointer;
+    margin: auto;
+    padding:10px 10px;
+    position: relative;
+    opacity:0;
+    animation: btn 5s ease-in 3s forwards;
+    border-radius: 50%;
+}
+
+.btn a{
+    color:black;
+    font-size: 20px;
+}
+
+.btn:hover{
+    background: white;
+}
+
+@keyframes btn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+.twbl{
+    height:400px;
+}
+
+
+.fbl{
+    float:left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
+    background: gray;
+    font-family: 'Cinzel', serif;
+    /*animation: blur 5s ease-in-out;*/
+}
+    
+
+/*
+@keyframes blur{
+    0%,100% {
+    text-shadow: -5px 5px 0 rgba(0,0,0,.2)}
+
+    50% {
+    text-shadow: -50px 50px 0 rgba(0,0,0,.2);
+    filter: blur(15px);
+}
+*/
+.twbl .fbl p{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    color: white;
+
+}
+
+.lbl{
+    background:url(/img/photo-1.jpg) no-repeat;
+    float: right;
+    width:50%;
+    min-height:100%;
+}
+
+.twbl .fbl h2{
+    color:white;
+}
+
+.btn2 a{
+    color:black;
+}
+
+.btn2{
+    display: inline-block;
+    border:none;
+    margin: auto;
+    padding:10PX 10px;
+    background-color: burlywood;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn2:hover{
+    background-color: white;
 }
