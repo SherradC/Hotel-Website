@@ -1,63 +1,98 @@
-#navbar .logo {
+.container .menu .logo, .menu .logo a{
     float: none;
+    text-align: center;
+    display: block;
+    padding-bottom: 15px;
+    font-size: 50px;
+  }
+  
+  .menu ul,
+  .menu ul li {
+    float: none;
+  }
+  
+  .menu ul li a {
+    padding: 5px;
+    border-bottom: #444 dotted 1px;    
+    display: block;
     text-align: center;
   }
   
-  #navbar ul,
-  #navbar ul li {
-    float: none;
-  }
-  
-  #navbar ul li a {
-    padding: 5px;
-    border-bottom: #444 dotted 1px;
-  }
-  
-  /* Showcase */
-  #showcase {
+  /* middle */
+  .middle {
     height: 100%;
   }
   
-  #showcase #showcase-content {
-    padding-top: 70px;
+  .middle .imgtxt {
+    padding-top: 40px;
+    padding-bottom: 25px;
   }
-  
+
+  .middle h1{
+    padding-bottom: 15px;
+  }
+
+  .middle .btn{
+    margin-bottom: 15px;
+  }
+
   /* Home Info */
-  #home-info {
+  .twbl .lbl{
     height: 550px;
-  }
-  
-  #home-info .info-img {
-    display: none;
-  }
-  
-  #home-info .info-content {
-    float: none;
     width: 100%;
+    display: block;
   }
+  
+  .twbl .fbl {
+    display: block;
+    width: 100%;
+    float: none;
+  }
+
+  .twbl{
+    height: 100%;
+  }
+  
   
   /* Boxes */
-  .box {
+  .bottom {
     float: none;
+    display: block;
+    width: 100%;
+  }
+
+  .bottom2{
+    display: block;
     width: 100%;
   }
   
   /* About */
-  #about-info .info-right,
-  #about-info .info-left {
+  .top .contain .left,
+  .top .contain .right {
     float: none;
     width: 100%;
   }
   
-  #about-info .info-right {
-    margin-top: 30px;
+  .top .contain .right {
+    margin: auto;
+    padding-top: 20px;
   }
   
-  .l-heading {
+  .top .contain .left h1 {
+    text-align: center;
+    font-size: 35px;
+    
+  }
+
+  .ctop{
+    margin:auto;
+    padding: 0 20px;
+  }
+
+  .ctop h1{
     text-align: center;
   }
-  
-  /* Contact */
-  #contact-info .box {
-    border-bottom: #444 dotted 1px;
+
+  .ctop p{
+    font-size: 15px;
   }

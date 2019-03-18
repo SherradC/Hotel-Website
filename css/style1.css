@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    line-height: 1.7em;
+    overflow-x: hidden;
+}
 .pc{
     color:burlywood
 }
@@ -38,7 +42,8 @@ nav ul li a{
     font-family: 'Kaushan Script', cursive;
     font-size: 20px;
     animation-name: links;
-    animation-duration: 3s;animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
 
     transition-duration: 1s;
     transition-timing-function: ease-in;
@@ -197,6 +202,7 @@ nav ul li a:hover{
 
 i {
     color:red;
+    padding-bottom: 10px;
 }
 
 .bottom{
@@ -231,4 +237,245 @@ i {
 
 .bottom p{
     margin-top: 25px;
+}
+
+.foot{
+    text-align: center;
+    margin: auto;
+    border: none;
+    padding: 20px;
+    background-color: gray;
+    color: white;    
+    font-family: 'Kaushan Script', cursive;
+    word-spacing: 1px;
+    font-size: 15px;
+}
+
+.top{
+    padding-top: 20px;
+}
+
+.top h1{
+    font-size: 40px;
+    padding-bottom: 25px;
+    animation-name: pulse;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform: scale()
+}
+.right{
+    float: right;
+    width: 50%;
+    min-height: 100%;
+    /* max-height: 500px; */
+
+}
+
+.left{
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+
+.right img{
+    display: block;
+    width: 70%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.left p{
+    padding-top: 15px;
+}
+
+.abmid{
+    background: url("/img/test-bg.jpg") no-repeat center center/cover;
+    height: 100%;
+    padding-top: 100px;
+    margin-top: 25px;    
+    overflow-x: hidden;
+}
+
+.abmid h1{
+    color: white;
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.abmid p{
+    /* text-align: center; */
+}
+
+.abmid img{
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+ .abmid .toppic, .abmid .botpic{ 
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
+.prime{
+    background: burlywood;
+    color: black;
+}
+
+.contain{
+    margin: auto;
+    max-width: 1100px;
+    /* overflow: auto; */
+    padding: 0 20px;
+    font-family: 'Cinzel', serif;
+}
+
+.toppic {
+    position: relative;
+    /* opacity: 0; */
+
+    animation-name: top;
+    animation-duration: 5s;
+    /* animation-delay: 2s; */
+    animation-fill-mode: forwards;
+}
+
+@keyframes top {
+    0% {left: -200vw;}
+    100% {left: 0px;}
+   
+}
+
+.botpic{
+    position: relative;
+    animation-name: bot;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bot{
+    0% {right: -200vw}
+    100%{right: 0px}
+    
+}
+
+.ctop{
+    /* padding-left: 20px; */
+    font-family: 'Cinzel', serif;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.ctop .upper{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.ctop .upper p{
+    margin-top: 50px;
+}
+
+.ctop h1{
+    font-size: 40px;
+}
+
+.form{
+    display: block;
+}
+
+.form label{
+    display:block;
+    font-size: 15px;
+}
+
+.form input, .form textarea{
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+
+.form textarea{
+    height: 200px;
+}
+
+.formc{
+    padding-bottom: 30px;
+}
+
+.bottom2{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    background-color:black;
+    color: white;
+    border: none;
+    font-family: 'Cinzel', serif;
+
+}
+
+.bottom2 div{
+    width: 33.33%;
+    text-align: center;
+}
+
+.bottom2 p{
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.FormC a{
+    display: inline-block;
+    color: white;
+    border:none;
+    margin: auto;
+    padding:10PX 10px;
+    background-color: burlywood;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.FormC a:hover{
+    background-color: gray;
+}
+
+.thankyou {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(white, black);
+    font-family: 'Kaushan Script', cursive;
+}
+
+.thankyou a{
+    margin: 0;
+    padding: 0;
+    color: burlywood;
+    font-size: 5em;
+    text-transform: uppercase;
+    animation: thanks 5s ease-in-out  infinite;
+}
+
+@keyframes thanks{
+    0%, 100% {
+        text-shadow: -5px 5px 0 rgba(0,0,0,.2);
+    }
+
+    50% {
+        text-shadow: -50px 50px 0 rgba(0,0,0,.2);
+    }
 }
