@@ -415,7 +415,7 @@ i {
     justify-content: center;
     padding: 20px 0;
     margin-top: 40px;
-    background-color:black;
+    background-color:burlywood;
     color: white;
     border: none;
     font-family: 'Cinzel', serif;
@@ -438,7 +438,7 @@ i {
     border:none;
     margin: auto;
     padding:10PX 10px;
-    background-color: burlywood;
+    background-color: gray;
     text-align: center;
     border-radius: 50%;
     cursor: pointer;
@@ -447,7 +447,7 @@ i {
 }
 
 .FormC a:hover{
-    background-color: gray;
+    background-color: black;
 }
 
 .thankyou {
@@ -478,4 +478,8 @@ i {
     50% {
         text-shadow: -50px 50px 0 rgba(0,0,0,.2);
     }
+}
+
+.phone h2{
+    padding-top: 5px;
 }

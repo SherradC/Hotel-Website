@@ -65,6 +65,15 @@
     display: block;
     width: 100%;
   }
+
+  .bottom2 div{
+    width: 100%;
+  }
+
+  .bottom2 p{
+    padding-top: 0%;
+    padding-bottom: 15px;
+  }
   
   /* About */
   .top .contain .left,
@@ -95,4 +104,15 @@
 
   .ctop p{
     font-size: 15px;
+  }
+
+  .FormC a{
+    display: block;
+    margin: 0 30px;
+    margin-top: 10px;
+    
+  }
+
+  .thankyou{
+    font-size: 1vw;
   }
